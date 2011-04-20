@@ -1,0 +1,19 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+body {
+    font-size: 20px;
+    overflow: hidden;
+}
+section {
+    font-size: 120%;
+    width: 84%;
+    height: 84%;
+    padding: 8%;
+    font-size: 120%;
+    background: #C1DCFF;
+    background-image: -moz-linear-gradient(rgba(255,255,255,0), white 50%);
+}

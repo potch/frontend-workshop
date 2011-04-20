@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'EBGaramondRegular';
+    src: url('EBGaramond-webfont.eot');
+    src: url('EBGaramond-webfont.eot?#iefix') format('eot'),
+         url('EBGaramond-webfont.woff') format('woff'),
+         url('EBGaramond-webfont.ttf') format('truetype'),
+         url('EBGaramond-webfont.svg#webfontEhInBfJ1') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#page {
+    box-shadow: 0 5px 5px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 5px 5px rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 5px 5px rgba(0,0,0,.2);
+    
+    -moz-border-radius: 0 0 500px 500px / 0 0 4px 4px;;
+    -webkit-border-radius: 0 0 500px 500px / 0 0 4px 4px;;
+    border-radius: 0 0 500px 500px / 0 0 4px 4px;
+    
+    position: relative;
+}
+#page:before, #page:after {
+    -webkit-box-shadow: 0 15px 5px rgba(0,0,0, .5);
+    -moz-box-shadow: 0 15px 5px rgba(0, 0, 0, .5);
+    box-shadow: 0 15px 5px rgba(0, 0, 0, .5);
+    position: absolute;
+    bottom: 15px;
+    z-index: -1;
+    width: 50%;
+    max-width: 300px;
+    content: "";
+    height: 50px;
+}
+#page:after {
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  left: 5px;
+}
+#page:before {
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  right: 5px;
+}
+
+h3 i {
+    text-shadow: 0 1px #fff;
+}
