@@ -1,12 +1,17 @@
 (function() {
     var $slides = $("section"),
         numSlides = $slides.length,
-        current = 1;
+        current = 1,
+        $body = $("body");
+        $window = $(window);
 
     $slides.each(function(n) {
         $(this).attr("id", n+1);
     });
     $("body").delegate("section", "click", next);
+    $("section a").click(function(e) {
+        e.stopPropagation();
+    });
     $(document).keydown(function(e) {
         switch (e.which) {
             case 37:
@@ -42,5 +47,11 @@
         if (newSlide && newSlide != current) {
             goto(newSlide);
         }
-    });
+    }).bind("resize", adjustSizing);
+    
+    function adjustSizing() {
+        $body.css("font-size", $window.height()/24);
+        window.location.hash = "#"+current;
+    }
+    adjustSizing();
 })();

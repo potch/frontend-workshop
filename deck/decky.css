@@ -1,19 +1,46 @@
-body, html {
+body, html { 
+    font-family: Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
 }
 body {
-    font-size: 20px;
+    font-size: 100%;
     overflow: hidden;
 }
 section {
-    font-size: 120%;
-    width: 84%;
-    height: 84%;
-    padding: 8%;
-    font-size: 120%;
     background: #C1DCFF;
     background-image: -moz-linear-gradient(rgba(255,255,255,0), white 50%);
+    font-size: 120%;
+    width: 90%;
+    height: 90%;
+    max-height: 90%;
+    padding: 5%;
+    font-size: 120%;
+}
+h1, h2, h3 {
+    text-align: center;
+    margin: 2% 0;
+}
+h1 { font-size: 250%; }
+h2 { font-size: 150%; }
+h3 { font-size: 120%; }
+
+section .b {
+    display: block;
+    margin: 1em auto;
+}
+section p {
+    text-align: center;
+    margin: 3% auto;
+}
+section div {
+    margin: 3% 0;
+}
+section li {
+    margin: 1% 0;
+}
+img {
+    vertical-align: middle;
 }

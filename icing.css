@@ -1,12 +1,16 @@
 @font-face {
     font-family: 'EBGaramondRegular';
-    src: url('EBGaramond-webfont.eot');
-    src: url('EBGaramond-webfont.eot?#iefix') format('eot'),
-         url('EBGaramond-webfont.woff') format('woff'),
-         url('EBGaramond-webfont.ttf') format('truetype'),
-         url('EBGaramond-webfont.svg#webfontEhInBfJ1') format('svg');
+    src: url('media/EBGaramond-webfont.eot');
+    src: url('media/EBGaramond-webfont.eot?#iefix') format('eot'),
+         url('media/EBGaramond-webfont.woff') format('woff'),
+         url('media/EBGaramond-webfont.ttf') format('truetype'),
+         url('media/EBGaramond-webfont.svg#webfontEhInBfJ1') format('svg');
     font-weight: normal;
     font-style: normal;
+}
+
+body {
+    background-image: url(grain.png);
 }
 
 #page {
