@@ -5,6 +5,7 @@
         $body = $("body");
         $window = $(window);
 
+
     $slides.each(function(n) {
         $(this).attr("id", n+1);
     });
@@ -40,6 +41,7 @@
             window.location.hash = "#"+n;
             current = n;
         }
+		$('#slidenum').text(current);
     }
 
     $(window).bind("hashchange", function() {
@@ -54,4 +56,5 @@
         window.location.hash = "#"+current;
     }
     adjustSizing();
+	$('#slidenum').text(current);
 })();

@@ -12,7 +12,6 @@ body {
 section {
     background: #C1DCFF;
     background-image: -moz-linear-gradient(rgba(255,255,255,0), white 50%);
-    font-size: 120%;
     width: 90%;
     height: 90%;
     max-height: 90%;
@@ -43,4 +42,23 @@ section li {
 }
 img {
     vertical-align: middle;
+}
+header, footer {
+	width: 100%;
+	position: fixed;
+	z-index: -1;
+}
+header {
+	top: 0;
+}
+footer {
+	font-size: 80%;
+	bottom: 0;
+	text-align: center;
+	z-index: 1;
+}
+#slidenum {
+	float: right;
+	color: rgba(0,0,0,.5);
+	margin: 1%;
 }
